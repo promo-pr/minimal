@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "0bf65e41bb127986a4c6b20a0479fb60",
-    "content-hash": "cb494288992d363c5c1e02a1556afcab",
+    "hash": "e2fcb66db6a38abc09facf308f590b59",
+    "content-hash": "47299c5393c6d2b469c94b282b74143f",
     "packages": [
         {
             "name": "bower-asset/bootstrap",
@@ -298,6 +298,47 @@
                 "html"
             ],
             "time": "2016-07-16 12:58:58"
+        },
+        {
+            "name": "promo-pr/yii2-admin-menu",
+            "version": "2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/promo-pr/yii2-admin-menu.git",
+                "reference": "fb926d82c82cb570863fc120bd8a48658df64180"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/promo-pr/yii2-admin-menu/zipball/fb926d82c82cb570863fc120bd8a48658df64180",
+                "reference": "fb926d82c82cb570863fc120bd8a48658df64180",
+                "shasum": ""
+            },
+            "require": {
+                "yiisoft/yii2": "~2.0.0"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "promo\\admin\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Promo-pr",
+                    "email": "1@promo-pr.ru"
+                }
+            ],
+            "description": "Admin menu for Yii2",
+            "keywords": [
+                "Admin menu",
+                "asset",
+                "yii2"
+            ],
+            "time": "2016-11-19 15:34:44"
         },
         {
             "name": "promo-pr/yii2-icons",

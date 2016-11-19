@@ -28,9 +28,6 @@ class BodyClass extends Widget
         if ($this->controller->actionParams['node']) {
             $this->addClass[] = $this->controller->id.'-'.$this->controller->actionParams['node'];
         }
-        if (!Yii::$app->user->isGuest) {
-            $this->addClass[] = 'admin-menu';
-        }
 
         parent::init();
         ob_start();

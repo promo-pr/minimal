@@ -34,22 +34,6 @@ SiteAsset::register($this);
             'items' => array_filter([
                 ['label' => 'Главная', 'url' => ['/main/default/index']],
                 ['label' => 'Контакты', 'url' => ['/main/contact/index']],
-                Yii::$app->user->isGuest ?
-                    ['label' => 'Регистрация', 'url' => ['/user/default/signup']] :
-                    false,
-                Yii::$app->user->isGuest ?
-                    ['label' => 'Вход',
-                        'url' => ['/user/default/login-popup'],
-                        'linkOptions' => ['class'=>'ajax-popup']] :
-                    false,
-                !Yii::$app->user->isGuest ?
-                    ['label' => 'Профиль', 'items' => [
-                        ['label' => 'Просмотр профиля', 'url' => ['/user/profile/index']],
-                        ['label' => 'Выход',
-                            'url' => ['/user/default/logout'],
-                            'linkOptions' => ['data-method' => 'post']]
-                    ]] :
-                    false,
             ]),
         ]);
         NavBar::end();
