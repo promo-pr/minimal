@@ -3,6 +3,16 @@
 $config = [
     'id' => 'app',
     'components' => [
+        'view' => [
+            'theme' => [
+                'basePath' => '@app/themes/base',
+                'baseUrl' => '@web/themes/base',
+                'pathMap' => [
+                    '@app/views' => '@app/themes/base',
+                    '@app/modules' => '@app/themes/base/modules',
+                ],
+            ],
+        ],
         'user' => [
             'identityClass' => 'app\models\User',
             'enableAutoLogin' => true,

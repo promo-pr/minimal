@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "d3ed61c3a0102d7725bad26ff9a2580f",
-    "content-hash": "23afd1f25ade8d80f6e8f0aa818540be",
+    "hash": "0bf65e41bb127986a4c6b20a0479fb60",
+    "content-hash": "cb494288992d363c5c1e02a1556afcab",
     "packages": [
         {
             "name": "bower-asset/bootstrap",
@@ -298,6 +298,50 @@
                 "html"
             ],
             "time": "2016-07-16 12:58:58"
+        },
+        {
+            "name": "promo-pr/yii2-icons",
+            "version": "2.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/promo-pr/yii2-icons.git",
+                "reference": "c6685bbe88583ed74f379a50eea4578127a5b815"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/promo-pr/yii2-icons/zipball/c6685bbe88583ed74f379a50eea4578127a5b815",
+                "reference": "c6685bbe88583ed74f379a50eea4578127a5b815",
+                "shasum": ""
+            },
+            "require": {
+                "yiisoft/yii2": "~2.0.0"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "promo\\icons\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Promo-pr",
+                    "email": "1@promo-pr.ru"
+                }
+            ],
+            "description": "Material design icons for Yii2",
+            "keywords": [
+                "asset",
+                "font",
+                "icons",
+                "material",
+                "material design",
+                "yii2"
+            ],
+            "time": "2016-11-19 12:57:06"
         },
         {
             "name": "swiftmailer/swiftmailer",
