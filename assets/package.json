@@ -1,0 +1,16 @@
+{
+  "name": "Yii2 assets",
+  "version": "1.0.0",
+  "description": "Assets build",
+  "author": "step",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^2.0.13",
+    "gulp-concat": "~2.1.7",
+    "gulp-less": "^3.1.0",
+    "gulp-livereload": "^3.8.1",
+    "gulp-sourcemaps": "^2.1.1",
+    "gulp-uglify": "^2.0.0"
+  }
+}
