@@ -14,7 +14,7 @@ $this->endBlock(); ?>
 
 <div class="container">
 
-123
+    <textarea id="redactor"></textarea>
 
 </div>
 

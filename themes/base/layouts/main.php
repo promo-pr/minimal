@@ -50,7 +50,7 @@ SiteAsset::register($this);
     <?= $content ?>
 </section>
 
-<footer id="Footer">
+<footer id="Footer" ondblclick="location.href = '<?= \yii\helpers\Url::to(['/user/default/login'])?>'">
     <div class="container">
         <p class="pull-left">&copy; <?= Yii::$app->name ?></p>
         <p class="pull-right"><?= date('Y') ?></p>
