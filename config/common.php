@@ -13,6 +13,19 @@ return [
     'timeZone' => 'Europe/Samara',
     'basePath' => dirname(__DIR__),
     'components' => [
+        'urlManager' => [
+            'class' => 'yii\web\UrlManager',
+            'enablePrettyUrl' => true,
+            'enableStrictParsing' => true,
+            'showScriptName' => false,
+            'normalizer' => [
+                'class' => 'yii\web\UrlNormalizer',
+            ],
+            'rules' => [
+                '' => 'site/default/index',
+                '<_m:[\w\-]+>/<_c:[\w\-]+>/<_a:[\w-]+>' => '<_m>/<_c>/<_a>',
+            ],
+        ],
         'formatter' => [
             'dateFormat' => 'dd.MM.yyyy',
             'timeFormat' => 'HH:mm:ss',

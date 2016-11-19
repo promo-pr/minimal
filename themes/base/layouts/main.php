@@ -1,6 +1,6 @@
 <?php
 
-use app\widgets\Alert;
+use promo\widgets\Alert;
 use yii\bootstrap\Nav;
 use yii\bootstrap\NavBar;
 use yii\widgets\Breadcrumbs;
@@ -32,7 +32,7 @@ SiteAsset::register($this);
             'encodeLabels' => false,
             'activateParents' => true,
             'items' => array_filter([
-                ['label' => 'Главная', 'url' => ['/main/default/index']],
+                ['label' => 'Главная', 'url' => ['/site/default/index']],
                 ['label' => 'Контакты', 'url' => ['/main/contact/index']],
             ]),
         ]);

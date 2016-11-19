@@ -24,7 +24,7 @@ use promo\admin\AdminMenu;
             ['label' => '<i class="material-icons">people</i> Пользователи', 'url' => ['/admin/users/default/index']],
             ['label' => '<i class="material-icons">cached</i> Очистить кэш', 'url' => ['/admin/default/flush'], 'linkOptions' => ['data-method' => 'post']],
         ]],
-        ['label' => '<i class="material-icons">power_settings_new</i>', 'url' => ['/site/logout'], 'linkOptions' => ['data-method' => 'post']],
+        ['label' => '<i class="material-icons">power_settings_new</i>', 'url' => ['/user/default/logout'], 'linkOptions' => ['data-method' => 'post']],
     ],
 ]) ?>
 

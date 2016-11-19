@@ -1,7 +1,7 @@
 <?php
 
 use yii\helpers\Html;
-use app\widgets\BodyClass;
+use promo\widgets\BodyClass;
 
 /* @var $this \yii\web\View */
 /* @var $content string */
@@ -23,8 +23,8 @@ use app\widgets\BodyClass;
         <?= $content ?>
 
 <?= Yii::$app->user->isGuest ?
-    false
-    :$this->render('_admin_menu'); ?>
+    false :
+    $this->render('_admin_menu'); ?>
 
     <?php $this->endBody() ?>
 <?php BodyClass::end()?>

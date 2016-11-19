@@ -2,6 +2,14 @@
 
 $config = [
     'id' => 'app',
+    'modules' => [
+        'site' => [
+            'class' => 'app\modules\site\Module',
+        ],
+        'user' => [
+            'class' => 'app\modules\user\Module',
+        ],
+    ],
     'components' => [
         'view' => [
             'theme' => [
@@ -18,7 +26,7 @@ $config = [
             'enableAutoLogin' => true,
         ],
         'errorHandler' => [
-            'errorAction' => 'site/error',
+            'errorAction' => 'site/default/error',
         ],
         'request' => [
             'cookieValidationKey' => '',
