@@ -1,5 +1,4 @@
 .idea
 Thumbs.db
-/vendor
-composer.phar
+/vendor/
 */node_modules/
