@@ -305,12 +305,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/promo-pr/yii2-admin-menu.git",
-                "reference": "fb926d82c82cb570863fc120bd8a48658df64180"
+                "reference": "0e8b56bf99fc83ac4a0a85494ae513b57cb629e6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/promo-pr/yii2-admin-menu/zipball/fb926d82c82cb570863fc120bd8a48658df64180",
-                "reference": "fb926d82c82cb570863fc120bd8a48658df64180",
+                "url": "https://api.github.com/repos/promo-pr/yii2-admin-menu/zipball/0e8b56bf99fc83ac4a0a85494ae513b57cb629e6",
+                "reference": "0e8b56bf99fc83ac4a0a85494ae513b57cb629e6",
                 "shasum": ""
             },
             "require": {
@@ -338,7 +338,7 @@
                 "asset",
                 "yii2"
             ],
-            "time": "2016-11-19 15:34:44"
+            "time": "2016-11-20 18:36:03"
         },
         {
             "name": "promo-pr/yii2-icons",

@@ -10,8 +10,6 @@ use promo\admin\AdminMenu;
 
 <?= AdminMenu::widget([
     'itemsLeft' => [
-        ['label' => Icon::name('home'), 'url' => Yii::$app->homeUrl],
-        ['label' => Icon::name('settings'), 'url' => ['/admin/default/index']],
         ['label' => Icon::name('library_books') . ' Содержимое', 'items' => [
             ['label' => 'Страницы' . Html::a(Icon::name('add_circle_outline'), ['/admin/pages/default/create']), 'url' => ['/admin/pages/default/index']],
             ['label' => 'Новости' . Html::a(Icon::name('add_circle_outline'), ['/admin/posts/default/create']), 'url' => ['/admin/posts/default/index']],
@@ -21,7 +19,6 @@ use promo\admin\AdminMenu;
     'itemsRight' => [
         ['label' => '<i class="material-icons">build</i>', 'items' => [
             ['label' => '<i class="material-icons">place</i> Схема проезда', 'url' => ['/admin/default/map']],
-            ['label' => '<i class="material-icons">people</i> Пользователи', 'url' => ['/admin/users/default/index']],
             ['label' => '<i class="material-icons">cached</i> Очистить кэш', 'url' => ['/admin/default/flush'], 'linkOptions' => ['data-method' => 'post']],
         ]],
         ['label' => '<i class="material-icons">power_settings_new</i>', 'url' => ['/user/default/logout'], 'linkOptions' => ['data-method' => 'post']],
