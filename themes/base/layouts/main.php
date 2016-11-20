@@ -3,6 +3,7 @@
 use promo\widgets\Alert;
 use yii\bootstrap\Nav;
 use yii\bootstrap\NavBar;
+use yii\helpers\Url;
 use yii\widgets\Breadcrumbs;
 use app\assets\SiteAsset;
 
@@ -11,6 +12,7 @@ use app\assets\SiteAsset;
 /* @var $content string */
 
 SiteAsset::register($this);
+$this->registerLinkTag(['rel' => 'canonical', 'href' => Url::canonical()]);
 ?>
 <?php $this->beginContent('@app/themes/layout.php'); ?>
 
