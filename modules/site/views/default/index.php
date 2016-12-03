@@ -14,7 +14,7 @@ $this->endBlock(); ?>
 
 <div class="container">
 
-
+Привет!
 
 </div>
 
