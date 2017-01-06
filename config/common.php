@@ -22,7 +22,23 @@ return [
                 'class' => 'yii\web\UrlNormalizer',
             ],
             'rules' => [
+                [
+                    'class' => 'yii\web\GroupUrlRule',
+                    'prefix' => 'admin',
+                    'routePrefix' => 'admin',
+                    'rules' => [
+                        '' => 'default/index',
+                        '<_a:(flush)>' => 'default/<_a>',
+                        '<_m>/create' => '<_m>s/default/create',
+                        '<_m:[\w\-]+>/<_c:[\w\-]+>/<id:\d+>' => '<_m>/<_c>/view',
+                        '<_m:[\w\-]+>/<id:\d+>/<_a:[\w\-]+>' => '<_m>/default/<_a>',
+                        '<_m:[\w\-]+>/<_c:[\w\-]+>/<id:\d+>/<_a:[\w\-]+>' => '<_m>/<_c>/<_a>',
+                        '<_m:[\w\-]+>' => '<_m>/default/index',
+                        '<_m:[\w\-]+>/<_c:[\w\-]+>' => '<_m>/<_c>/index',
+                    ],
+                ],
                 '' => 'site/default/index',
+                '<_m:[\w\-]+>/<_a:[\w-]+>' => '<_m>/default/<_a>',
                 '<_m:[\w\-]+>/<_c:[\w\-]+>/<_a:[\w-]+>' => '<_m>/<_c>/<_a>',
             ],
         ],

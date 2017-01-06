@@ -1,6 +1,6 @@
 <?php
 
-use app\widgets\Alert;
+use promo\widgets\Alert;
 use yii\helpers\ArrayHelper;
 use yii\widgets\Breadcrumbs;
 use app\assets\AdminAsset;
@@ -21,7 +21,7 @@ if (isset($this->params['breadcrumbs'])) {
     $breadcrumbs = [];
 }
 ?>
-<?php $this->beginContent('@app/views/layouts/layout.php'); ?>
+<?php $this->beginContent('@app/themes/layout.php'); ?>
 
     <section id="Main">
         <div class="container">

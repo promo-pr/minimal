@@ -3,6 +3,22 @@
 $config = [
     'id' => 'app',
     'modules' => [
+        'admin' => [
+            'class' => 'app\modules\admin\Module',
+            'layout' => '@app/themes/base/layouts/admin',
+            'modules' => [
+                'pages' => [
+                    'class' => 'app\modules\page\Module',
+                    'controllerNamespace' => 'app\modules\page\controllers\backend',
+                    'viewPath' => '@app/modules/page/views/backend',
+                ],
+            ],
+        ],
+        'page' => [
+            'class' => 'app\modules\page\Module',
+            'controllerNamespace' => 'app\modules\page\controllers\frontend',
+            'viewPath' => '@app/modules/page/views/frontend',
+        ],
         'site' => [
             'class' => 'app\modules\site\Module',
         ],
