@@ -48,7 +48,7 @@ use yii\helpers\Url;
 
 <div class="pull-right">
     <a class="btn btn-default" role="button" data-toggle="collapse" href="#collapseSEO" aria-expanded="false" aria-controls="collapseSEO">
-        <i class="material-icons">settings</i> Поисковая оптимизация
+        <i class="material-icons">settings</i>
     </a>
 </div>
 

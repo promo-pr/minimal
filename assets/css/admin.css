@@ -1,0 +1,8 @@
+.btn .material-icons {
+    position: relative;
+    top: 6px;
+    line-height: 0;
+}
+h1 {
+    display: none;
+}

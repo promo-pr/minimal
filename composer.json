@@ -18,6 +18,7 @@
         "promo-pr/yii2-icons": "~2.0.0",
         "promo-pr/yii2-widgets": "~2.0.0",
         "promo-pr/yii2-admin-menu": "~2.0.0",
+        "bower-asset/air-datepicker":"~2.2.3",
         "vova07/yii2-imperavi-widget": "*"
     },
     "require-dev": {

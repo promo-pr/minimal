@@ -9,9 +9,8 @@ use app\modules\admin\rbac\Rbac as AdminRbac;
 ?>
 
 <?php $this->beginBlock('title');
-echo Yii::$app->user->can(AdminRbac::PERMISSION_ADMIN_PANEL) ?
-    Html::a('<i class="material-icons">mode_edit</i>', ['/admin/pages/default/update', 'id' => $model->id]) :
-    false;
+echo Yii::$app->user->isGuest ?
+    false : Html::a('<i class="material-icons">mode_edit</i>', ['/admin/pages/default/update', 'id' => $model->id]);
 echo Html::encode($model->title);
 $this->endBlock(); ?>
 

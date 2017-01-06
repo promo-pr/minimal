@@ -4,8 +4,56 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "e323b76b9187d9d70ef51022fe3d852f",
+    "content-hash": "1c88e9678481e25c6ec977683b999879",
     "packages": [
+        {
+            "name": "bower-asset/air-datepicker",
+            "version": "v2.2.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/t1m0n/air-datepicker.git",
+                "reference": "004188d9480e3711c08491d6bb988814314a2b13"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/t1m0n/air-datepicker/zipball/004188d9480e3711c08491d6bb988814314a2b13",
+                "reference": "004188d9480e3711c08491d6bb988814314a2b13",
+                "shasum": ""
+            },
+            "require": {
+                "bower-asset/jquery": ">=2.0.0,<4.0.0"
+            },
+            "type": "bower-asset-library",
+            "extra": {
+                "bower-asset-main": [
+                    "dist/js/datepicker.js",
+                    "dist/css/datepicker.css"
+                ],
+                "bower-asset-ignore": [
+                    "**/.*",
+                    "node_modules",
+                    "bower_components",
+                    "tasks",
+                    "docs",
+                    "page",
+                    "package.json",
+                    "gulpfile.js",
+                    "test",
+                    "tests"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "description": "A lightweight, customizable, powerful jQuery datepicker",
+            "keywords": [
+                "customizable",
+                "datepicker",
+                "plugin",
+                "powerful",
+                "timepicker"
+            ]
+        },
         {
             "name": "bower-asset/bootstrap",
             "version": "v3.3.7",
