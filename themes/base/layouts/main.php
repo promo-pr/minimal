@@ -35,7 +35,7 @@ $this->registerLinkTag(['rel' => 'canonical', 'href' => Url::canonical()]);
             'activateParents' => true,
             'items' => array_filter([
                 ['label' => 'Главная', 'url' => ['/site/default/index']],
-                ['label' => 'Контакты', 'url' => ['/main/contact/index']],
+                ['label' => 'Контакты', 'url' => ['/site/contact/index']],
             ]),
         ]);
         NavBar::end();
