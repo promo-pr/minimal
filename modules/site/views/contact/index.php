@@ -9,6 +9,9 @@ use yii\bootstrap\ActiveForm;
 
 $this->title = 'Контакты';
 $this->params['breadcrumbs'][] = $this->title;
+
+$this->registerJsFile('https://api-maps.yandex.ru/2.1/?lang=ru_RU');
+$this->registerJs("ymaps.ready(init);", $this::POS_END);
 ?>
 
 <?php $this->beginBlock('title');
@@ -32,7 +35,26 @@ $this->endBlock(); ?>
         <div class="col-md-7">
             <div class="form-group">
                 <label>Схема проезда</label>
+                <div id="map" style="width: 100%; height: 400px"></div>
+                <script type="text/javascript">
+                    var myMap,
+                        myPlacemark;
 
+                    function init(){
+                        myMap = new ymaps.Map("map", {
+                            center: [55.76, 37.64],
+                            zoom: 14,
+                            controls: ["routeEditor", "zoomControl", "fullscreenControl"]
+                        });
+
+                        myPlacemark = new ymaps.Placemark([55.76, 37.64], {
+                            hintContent: 'Москва!',
+                            balloonContent: 'Столица России'
+                        });
+
+                        myMap.geoObjects.add(myPlacemark);
+                    }
+                </script>
             </div>
         </div>
 
