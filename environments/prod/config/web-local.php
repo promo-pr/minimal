@@ -16,6 +16,12 @@ return [
                     ]
                 ],
             ],
+            'converter' => [
+                'class' => 'yii\web\AssetConverter',
+                'commands' => [
+                    'less' => ['css', 'lessc {from} {to} --no-color'],
+                ],
+            ],
         ],
         'log' => [
             'targets' => [

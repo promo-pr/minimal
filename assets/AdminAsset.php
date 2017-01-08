@@ -9,7 +9,7 @@ class AdminAsset extends AssetBundle
 {
     public $sourcePath = '@app/assets';
     public $css = [
-        'css/admin.css'
+        'less/admin.less'
     ];
     public $js = [
     ];

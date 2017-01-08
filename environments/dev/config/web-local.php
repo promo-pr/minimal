@@ -16,6 +16,10 @@ return [
                     ]
                 ],
             ],
+            'converter' => [
+                'class' => 'yii\web\AssetConverter',
+                'forceConvert' => true,
+            ],
         ],
         'log' => [
             'targets' => [

@@ -9,7 +9,7 @@ class SiteAsset extends AssetBundle
 {
     public $sourcePath = '@app/assets';
     public $css = [
-        'css/site.css'
+        'less/site.less'
     ];
     public $js = [
         'js/lib.js',

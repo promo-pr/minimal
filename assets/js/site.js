@@ -1,1 +1,9 @@
-!function(n){n(function(){})}(jQuery);
+(function ($) {
+
+    $(function() {
+
+
+
+    });
+
+})(jQuery);
