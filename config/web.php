@@ -14,6 +14,9 @@ $config = [
                 ],
             ],
         ],
+        'file' => [
+            'class' => 'app\modules\file\Module',
+        ],
         'page' => [
             'class' => 'app\modules\page\Module',
             'controllerNamespace' => 'app\modules\page\controllers\frontend',
