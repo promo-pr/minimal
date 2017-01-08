@@ -35,7 +35,7 @@ $this->endBlock(); ?>
         <div class="col-md-7">
             <div class="form-group">
                 <label>Схема проезда</label>
-                <div id="map" style="width: 100%; height: 400px"></div>
+                <div id="map" style="width: 100%; height: 350px"></div>
                 <script type="text/javascript">
                     var myMap,
                         myPlacemark;
@@ -48,8 +48,9 @@ $this->endBlock(); ?>
                         });
 
                         myPlacemark = new ymaps.Placemark([55.76, 37.64], {
-                            hintContent: 'Москва!',
-                            balloonContent: 'Столица России'
+                            iconContent: 'Наш офис'
+                        },{
+                            preset: 'islands#yellowStretchyIcon'
                         });
 
                         myMap.geoObjects.add(myPlacemark);

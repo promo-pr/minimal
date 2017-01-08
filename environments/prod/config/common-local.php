@@ -10,6 +10,9 @@ return [
             'enableSchemaCache' => true,
         ],
         'mailer' => [],
+        'cache' => [
+            'class' => 'yii\caching\FileCache',
+        ],
     ],
 ];
  
