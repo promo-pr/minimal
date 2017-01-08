@@ -1,7 +1,7 @@
 <?php
 
 $config = [
-    'id' => 'app',
+    'id' => 'my_app',
     'modules' => [
         'admin' => [
             'class' => 'app\modules\admin\Module',
