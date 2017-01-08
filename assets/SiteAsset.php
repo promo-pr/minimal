@@ -17,6 +17,7 @@ class SiteAsset extends AssetBundle
     ];
     public $depends = [
         'yii\web\JqueryAsset',
+        'yii\web\YiiAsset',
         'promo\icons\IconsAsset'
     ];
 
