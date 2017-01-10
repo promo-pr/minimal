@@ -9,19 +9,20 @@ return [
             'class' => 'yii\web\AssetManager',
             'linkAssets' => true,
             'appendTimestamp' => true,
-            'bundles' => [
-                'yii\web\JqueryAsset' => [
-                    'js' => [
-                        'jquery.min.js'
+            'bundles' => require(__DIR__ . '/assets.php'),
+            'converter'=> [
+                'class'=>'nizsheanez\assetConverter\Converter',
+                'parsers' => [
+                    'less' => [ // file extension to parse
+                        'class' => 'nizsheanez\assetConverter\Less',
+                        'output' => 'css', // parsed output file type
+                        'options' => [
+                            'auto' => true, // optional options
+                            'compressed' => true
+                        ]
                     ]
-                ],
-            ],
-            'converter' => [
-                'class' => 'yii\web\AssetConverter',
-                'commands' => [
-                    'less' => ['css', 'lessc {from} {to} --no-color'],
-                ],
-            ],
+                ]
+            ]
         ],
         'log' => [
             'targets' => [
