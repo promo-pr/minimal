@@ -2,14 +2,13 @@
 
 namespace app\assets;
 
-use Yii;
 use yii\web\AssetBundle;
 
 class AdminAsset extends AssetBundle
 {
     public $sourcePath = '@app/assets';
     public $css = [
-        'less/admin.less'
+        'css/admin.css'
     ];
     public $js = [
     ];

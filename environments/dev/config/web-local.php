@@ -9,17 +9,6 @@ return [
             'class' => 'yii\web\AssetManager',
             'linkAssets' => true,
             'appendTimestamp' => true,
-            'bundles' => require(__DIR__ . '/assets.php'),
-            'converter'=> [
-                'class'=>'nizsheanez\assetConverter\Converter',
-                'force'=> true,
-                'parsers' => [
-                    'less' => [ // file extension to parse
-                        'class' => 'nizsheanez\assetConverter\Less',
-                        'output' => 'css', // parsed output file type
-                    ]
-                ]
-            ]
         ],
         'log' => [
             'targets' => [

@@ -12,7 +12,7 @@
     "minimum-stability": "stable",
     "require": {
         "php": ">=5.4.0",
-        "yiisoft/yii2": "~2.0.5",
+        "yiisoft/yii2": "~2.0.11",
         "yiisoft/yii2-bootstrap": "~2.0.0",
         "yiisoft/yii2-swiftmailer": "~2.0.0",
         "yiisoft/yii2-imagine": "~2.1.0",
@@ -20,8 +20,7 @@
         "promo-pr/yii2-widgets": "~2.0.0",
         "promo-pr/yii2-admin-menu": "~2.0.0",
         "bower-asset/air-datepicker":"~2.2.3",
-        "vova07/yii2-imperavi-widget": "*",
-        "nizsheanez/yii2-asset-converter": "1.*"
+        "vova07/yii2-imperavi-widget": "*"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "~2.0.0",
