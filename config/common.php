@@ -56,9 +56,6 @@ return [
         'mailer' => [
             'class' => 'yii\swiftmailer\Mailer',
         ],
-        'cache' => [
-            'class' => 'yii\caching\DummyCache',
-        ],
         'log' => [
             'class' => 'yii\log\Dispatcher',
         ],

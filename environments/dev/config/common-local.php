@@ -12,6 +12,9 @@ return [
         'mailer' => [
             'useFileTransport' => true,
         ],
+        'cache' => [
+            'class' => 'yii\caching\DummyCache',
+        ],
     ],
 ];
  

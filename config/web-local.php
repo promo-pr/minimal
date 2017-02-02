@@ -3,7 +3,7 @@
 return [
     'components' => [
         'request' => [
-            'cookieValidationKey' => 'ro4YjJRZJ8WC46ISmfmEhTblNLufM42Y',
+            'cookieValidationKey' => 'iQljKoL_fsldzndNPv-h4gaLxl97hFpW',
         ],
         'assetManager' => [
             'class' => 'yii\web\AssetManager',
